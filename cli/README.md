@@ -23,10 +23,10 @@
 
  # ls :- shows list of files and folders in directory
 
-   $ls
-   $ls -l  # -l :- long list
-   $ls -a  # -a :- all files including hidden
-   $ls -h  # -h :- size in human readable size.
+    $ls
+    $ls -l  # -l :- long list
+    $ls -a  # -a :- all files including hidden
+    $ls -h  # -h :- size in human readable size.
 
  # man :- displays manual of the command.
 
@@ -49,13 +49,13 @@
 
  # rm :- remove files 
 
-   $ rm foo.txt
-   $ rm -r foo
+    $ rm foo.txt
+    $ rm -r foo
 
  # mv :- move a file or rename a file
 
-   $ mv foo.txt foo/
-   $ mv foo.txt bar.txt
+    $ mv foo.txt foo/
+    $ mv foo.txt bar.txt
 
  # cp :- copy files 
 
@@ -65,9 +65,9 @@
 
  # ln :- creates association between files and folders.
 
-   $ln a.txt b.txt   # a.txt source file, b.txt targeted file
+    $ln a.txt b.txt   # a.txt source file, b.txt targeted file
 
-   $ln -s src trgt
+    $ln -s src trgt
 
  # Redirect (>) :- redirect output
 
