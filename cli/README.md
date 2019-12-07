@@ -90,42 +90,42 @@
    
  ## cURL :- utility allows us to interact with url's  
    
-   $curl -OL cdn.arulvats.tk/sonnets.txt 
+    $curl -OL cdn.arulvats.tk/sonnets.txt 
    
  ## which :- used to see if the given program is available at the command line  
    
-   $which curl
-   output: /usr/bin/curl
-   output: (empty) if not available
+    $which curl
+    output: /usr/bin/curl
+    output: (empty) if not available
    
  ## whereis :- used to find the location of program
    
-   $whereis curl
-   output: /usr/bin/curl
+    $whereis curl
+    output: /usr/bin/curl
    
  ## bang(!) :- to run previous command  
    
-   $echo "hello friend"
-   $!!
-   echo "hello freind"
-   hello freind
-   $!204
-   command at 204 location in history will run
+    $echo "hello friend"
+    $!!
+    echo "hello freind"
+    hello freind
+    $!204
+    command at 204 location in history will run
    
  ## History :- check the history of commands used  
    
-   $history
+    $history
    
  ## Reverse-in-search(^r) :- search previously used command
    
-   press ctrl(^) + r
-   (reverse-in-search): now just search the command by entering spelling of command
+    press ctrl(^) + r
+    (reverse-in-search): now just search the command by entering spelling of command
 
  ## sort :- sort in alphabetical manner
 
     $sort capitals.txt | cat >> sortedcapitals.txt
      
-     sort sorts the content of files in alphabetical manner, |  redirects the output of command at left side to reight side.
+    sort sorts the content of files in alphabetical manner, |  redirects the output of command at left side to reight side.
 
  ## Head :- inspect the beginning of file.
 
@@ -140,9 +140,9 @@
    
  ## Word counts :- counts lines, words bytes
    
-   $wc sonnets.txt
-   output: 2620 17670 95635 sonnets.txt
-   lines: 2620, words: 17670, bytes: 95635
+    $wc sonnets.txt
+    output: 2620 17670 95635 sonnets.txt
+    lines: 2620, words: 17670, bytes: 95635
    
  ## Less :- inspect the file 
 
@@ -159,32 +159,32 @@
       
  ## Grep :- inspect file content  
    
-   $grep rose sonnets.txt
-   $grep -i rose sonnets.txt | wc
-   $grep -in rose sonnets.txt
-   $grep -r sesq text_files
+    $grep rose sonnets.txt
+    $grep -i rose sonnets.txt | wc
+    $grep -in rose sonnets.txt
+    $grep -r sesq text_files
    
  ## Find :- usefull for finding files  
    
-   $find . -size +10M "*.wav"
-   $find . -name "*.txt"
+    $find . -size +10M "*.wav"
+    $find . -name "*.txt"
   
  ## XDG-Open :- opens argument using default program
    
-   $xdg-open foo.pdf
+    $xdg-open foo.pdf
    
  ## top :- which process consuming most resources
    
-   $top
+    $top
    
  ## ps :- find the process on system  
    
-   $ps aux | grep firefox
+    $ps aux | grep firefox
    
  ## Kill :- kills the process
    
-   $kill -15 12241
-   $pkill -15 -f firefox
+    $kill -15 12241
+    $pkill -15 -f firefox
   
  ## Shortcuts :-
 
