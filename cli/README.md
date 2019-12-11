@@ -91,6 +91,8 @@
  ## cURL :- utility allows us to interact with url's  
    
     $curl -OL cdn.arulvats.tk/sonnets.txt 
+    $curl -o wordpress.zip https://wordpress.org/latest.zip  
+    $curl -CO  https://wordpress.org/latest.zip  
    
  ## which :- used to see if the given program is available at the command line  
    
