@@ -68,7 +68,8 @@
     $ cp -r foo foo/bar
     $ cp *.txt foo/
 
- ## ln :- creates association between files and folders.
+ ## ln :- creates association from files and folders to another.By default hard link
+ hard links they only work on the current file system
 
     $ln a.txt b.txt   # a.txt source file, b.txt targeted file
 
