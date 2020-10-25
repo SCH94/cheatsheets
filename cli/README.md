@@ -25,10 +25,13 @@
  ## ls :- shows list of files and folders in directory
 
     $ls
-    $ls -l  # -l :- long list
+    $ls -l  # -l :- list out the names of the files and directories as well as give more detailed information about them.
     $ls -a  # -a :- all files including hidden
-    $ls -h  # -h :- size in human readable size.
-    $ls /home/sch # list the files and directories inside of the /usr/sch directory, without having to leave the current directory
+    $ls -h  # -h :- size in human readable size.by default its in bytes.
+    $ls -s  # -s :- sort by file size, instead of the default sorting by name.
+    $ls -t  # -t :- sort by last modified time
+    $ls -r  # -r :- reverse sort 
+    $ls /home/sch # :- list the files and directories inside of the /usr/sch directory, without having to leave the current directory
 
  ## man :- displays manual of the command.
 
