@@ -69,7 +69,7 @@
     $ cp *.txt foo/
 
  ## ln :- creates association from files and folders to another.By default hard link
- hard links they only work on the current file system
+ hard links they only work on the current file system, don not work for directories.
 
     $ln a.txt b.txt   # a.txt source file, b.txt targeted file
 
@@ -168,14 +168,25 @@
  ## Grep :- inspect file content  
    
     $grep rose sonnets.txt
-    $grep -i rose sonnets.txt | wc
-    $grep -in rose sonnets.txt
+    $grep -i rose sonnets.txt | wc # -i insensitive search
+    $grep -in rose sonnets.txt # -n displays line number
     $grep -r sesq text_files
+    $grep "r..y" README.md # all words that have r followed by any two characters, then followed by the letter y like ruby, rary.
+    $grep -c world\'s sonnets.txt # counts the occurence for the word worlds in sonnets.txt
+    
    
  ## Find :- usefull for finding files  
    
     $find . -size +10M "*.wav"
     $find . -name "*.txt"
+    $find . -name \*.txt # same as $find . -name "*.txt"
+    $find . -path \*session\*
+    $find . -path "*session*" # same as $find . -path \*session\*
+    $find . -path \*session\* -type f # look exclusively for files whose path contains session
+    $find . -path \*session\* -type d # look exclusively for directories whose path contains session
+    $find . -path \*session\* -type f -name \*mem\* # only files whose path name contains session and whose file name contains mem. this was AND query
+    $find . \( -name \*.gemspec -or -name \*.jpg \) -type f # OR query
+    $find . \( -name \*.gemspec -or -name \*.jpg \) -type f # find file and delete them and print them
   
  ## XDG-Open :- opens argument using default program
    
