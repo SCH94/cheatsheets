@@ -28,6 +28,7 @@
     $ls -l  # -l :- long list
     $ls -a  # -a :- all files including hidden
     $ls -h  # -h :- size in human readable size.
+    $ls /home/sch # list the files and directories inside of the /usr/sch directory, without having to leave the current directory
 
  ## man :- displays manual of the command.
 
