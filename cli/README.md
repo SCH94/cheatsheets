@@ -13,7 +13,7 @@
        Hello World!
 
  ## pwd :- Print Present working directory
- #By default, pwd will list the “logical” path of your current directory. This means it will treat symlinked paths (see Section 1.4.3) as if they were the actual paths. For example, my development directory doesn’t exist under my home folder, /Users/markbates; instead it is symlinked to a folder inside of /Users/markbates/Dropbox.
+ # By default, pwd will list the “logical” path of your current directory. This means it will treat symlinked paths (see Section 1.4.3) as if they were the actual paths. For example, my development directory doesn’t exist under my home folder, /Users/sch; instead it is symlinked to a folder inside of /Users/sch/Dropbox.
 
     $ pwd[option]
 
