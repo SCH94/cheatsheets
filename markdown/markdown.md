@@ -23,12 +23,12 @@ Horizontal rules:
       
 Headers:
   
->#Header one(biggest)
->##Header two
->###Header three
->####Header four
->#####Header five
->######Header six(smaller)
+    #Header one(biggest)
+    ##Header two
+    ###Header three
+    ####Header four
+    #####Header five
+    ######Header six(smaller)
       
 Links:
   
@@ -138,6 +138,13 @@ Inline code:
  return foo + ':' + s;
  }
  ```    
+Indentation:
+
+header
+__header2
+____body
+
+where (_) is space 
 
 
 

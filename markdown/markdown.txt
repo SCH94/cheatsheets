@@ -138,7 +138,13 @@ Inline code:
  return foo + ':' + s;
  }
  ```    
+Indentation:
 
+header
+__header2
+____body
+
+where (_) is space
 
 
     
