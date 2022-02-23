@@ -173,6 +173,8 @@
     $grep -r sesq text_files
     $grep "r..y" README.md # all words that have r followed by any two characters, then followed by the letter y like ruby, rary.
     $grep -c world\'s sonnets.txt # counts the occurence for the word worlds in sonnets.txt
+    $grep -A 5 -i rose sonnets.txt # also shows next five lines after the rose word is found
+    $grep -B 5 -i rose sonnets.txt # also shows next five lines before the rose word is found
     
    
  ## Find :- usefull for finding files  
@@ -204,6 +206,18 @@
    
     $kill -15 12241
     $pkill -15 -f firefox
+ ## vim: code editor
+    i :- insert mode
+    o :- open line below and enter insert mode
+    d :- delete line
+    / :- search
+    u :- undo
+    y :- yank(copy)
+    j :- move one line below
+    k :- move one line above
+    $ :- move to end of line
+    > :- indent
+    < :- unindent 
   
  ## Shortcuts :-
 

@@ -21,7 +21,8 @@
   $sudo make prefix=/usr/local install  
       
 ### Configuration  
-      
+
+  $git config --list
   $git config --global user.name ""  
   $git config --global user.mail ""  
       
@@ -32,8 +33,14 @@
   $git help  
   $git help | less  
   $cat ~/.gitconfig  
+
+### Adding SSH key
+
+  $ssh-keygen -t rsa -b 2048
+  $cat id_rsa.pub
+  :- copy the key and paste it in github/gitlab
       
-## Initializing The Repo  
+## Pushing existing folder  
   
   $mkdir ./cheatsheets/git/  
   $cd ./cheatsheets/git  
@@ -46,7 +53,7 @@
       
   $cat ./.git/config  
       
-## Our first commit  
+### Our first commit  
     
   Git wont allow us to complete initialization of the repo if unchanged  
       
@@ -62,5 +69,33 @@
   $git status  
       
   $git log 
+
+### Commiting changes
+
+  $git commit -m "MESSAGE"
+
+### Adding remote
+
+  $git remote add origin https://gitlab.com/SCH94/testproject.git
+
+### Pushing changes
+
+  $git push -uf origin master
+
+### Pushing existing repo
+
+  $git remote rename origin old-origin
+  $git remote add origin https://gitlab.com/SCH94/testproject.git
+  $git push -u origin --all
+  $git push -u origin --tags
+
+## Create a new repository
+
+  $git clone "REPO_URL"
+  $cd cloned_dir
+  $touch file
+  $git add .
+  $git commit -m "Initial commit"
+  $git push -u origin master
   
     
