@@ -131,13 +131,13 @@ Inline code:
 > ``
      
  hree backticks (```):  
-> ```
- var foo = 'bar';
+>   ```
+    var foo = 'bar';
 
- function baz(s) {
- return foo + ':' + s;
- }
- ```    
+    function baz(s) {
+    return foo + ':' + s;
+    }
+    ```    
 Indentation:
 
 header
