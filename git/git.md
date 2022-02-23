@@ -118,7 +118,10 @@
 
 ### Merging branch with master
 
-  
+  $git checkout master
+  $git pull
+  $git merge <branch name>
+  $git push
 
   
     
