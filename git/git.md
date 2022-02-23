@@ -116,7 +116,7 @@
   `$git commit -m "commit"`
   `$git push origin <branch name>`
 
-### Merging branch with master
+ ### Merging branch with master
 
    $git checkout master   
    $git pull  
