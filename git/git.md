@@ -91,11 +91,34 @@
 
 ## Create a new repository
 
-  $git clone "REPO_URL"
+  $git clone <"REPO_URL">
   $cd cloned_dir
   $touch file
   $git add .
   $git commit -m "Initial commit"
   $git push -u origin master
+
+## Branching
+
+### List current branches
+
+  $git branch
+  * :- current branch
+
+### Creating new branch
+
+  $git branch <branch name>
+
+### Changing branch
+
+  $git checkout <branch name>
+  $git add .
+  $git commit -m "commit"
+  $git push origin <branch name>
+
+### Merging branch with master
+
+  
+
   
     
