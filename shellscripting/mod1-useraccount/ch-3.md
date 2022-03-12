@@ -8,44 +8,45 @@
   
   ## display uid
 
-  echo "the uid is ${UID}"
+    echo "the uid is ${UID}"
 
   ## only display if uid not equal 1000
   
-  DRY -> dont repeat yourself
+    DRY -> dont repeat yourself
 
-  UID_T='1000'
+    UID_T='1000'
+    
+    if [["${UID}" -ne "${UID_T}" ]]
+    then
+        echo "Your uid does not match"
+        exit 1    --> stop the execution of script, exit status 0 if complete script executes successfully to the bottom of script, any other number if not executes completely.
+    fi
   
-  if [["${UID}" -ne "${UID_T}" ]]
-  then
-    echo "Your uid does not match"
-    exit 1    --> stop the execution of script, exit status 0 if complete script executes successfully to the bottom of script, any other number if not executes completely.
-  fi
-  
-  $ man useradd
+    $ man useradd
   search for exit values in useradd manual.
 
   ## display username
 
-  USR=$(id -un)
+    USR=$(id -un)
 
   ## username command succeded
-  $? --> special variable,  hold the exit status of most recently command executed.
+    $? --> special variable,  hold the exit status of most recently command executed.
 
-  if [[ "${?}" -ne 0 ]]
-  then
-    echo "failed to execute command"
-    exit 1
-  fi
-  echo "Your username is ${USER_NAME}"
+    if [[ "${?}" -ne 0 ]]
+    then
+        echo "failed to execute command"
+        exit 1
+    fi
+    echo "Your username is ${USER_NAME}"
+
   ## string test conditional
 
-  USR=$(id -un)
+    USR=$(id -un)
 
-  if [[ "${USER_NAME}" = "${USR}" ]]
-  then
-    echo "matched"
-  fi
+    if [[ "${USER_NAME}" = "${USR}" ]]
+    then
+        echo "matched"
+    fi
 
   = --> used depending of context, for variables used as assignment however when we are doing test inside [[]] then its a test operator comparing
 
@@ -53,10 +54,11 @@
 
   ## test for !=(not equal) for the string.
 
-  if [[ "${USER_NAME}" != "${USR}" ]]
-  then
-    echo "NOT matched"
-    exit 1
-  fi
+    if [[ "${USER_NAME}" != "${USR}" ]]
+    then
+        echo "NOT matched"
+        exit 1
+    fi
+    exit 0
 
   exit 0   --> script completed successfully we we dont use exit 0 at end of script then the most recently runned command exit code will be used.
