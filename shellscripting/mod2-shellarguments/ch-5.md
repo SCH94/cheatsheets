@@ -75,7 +75,10 @@
     $ echo "${SV}" | shuf
 
     $ man shuf --> generate random permutation
+<<<<<<< HEAD
 
+=======
+>>>>>>> devops
     $ man fold --> wrap each input line to fit in specified width
 
     $ echo "${SV}" | fold -b 1

@@ -57,5 +57,10 @@ echo "username: ${USERNAME}"
 echo
 echo "password: ${PASSWORD}"
 echo
+<<<<<<< HEAD
 echo "host: $(hostname)" 
+=======
+echo "host: $(hostname)"
+echo
+>>>>>>> devops
 exit 0
