@@ -32,6 +32,7 @@ fi
 
 # set password
 echo "${PASWD}" | passwd --stdin "${1}"
+# passwd --stdin "${1}" < "${PASWD}"
 
 # check if password set successfully
 if [[ "${?}" -ne 0 ]]
