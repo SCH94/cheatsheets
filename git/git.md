@@ -113,10 +113,32 @@
 
   ### Merging branch with master
 
-  $git checkout master   
-  $git pull  
-  $git merge <branch name>  
-  $git push  
+    $git checkout master   
+    $git pull  
+    $git merge <branch name>  
+    $git push  
+
+  ### Deeper look at git
+
+    $ touch test{1..4}.md
+    $ git add test1.md && git commit -m 'Create first file'
+    $ git add test2.md && git commit -m 'Create send file'
+    $ git add test3.md && git commit -m 'Create third file and create fourth file'
+
+  ### Changing The Last Commit
+    
+    Above we forgot to add a 4th file, so lets add it
+
+    $ git add test4.md
+    $ git commit --amend
+  
+    NOTE:--> Remember to only amend commits that have not been pushed anywhere! The reason for this is that git commit --amend does not simply edit the last commit, it replaces that commit with an entirely new one.This means that if you were to amend a commit other developers are basing their work on, you’re effectively destroying a commit they could be basing their work off of. When rewriting history always make sure that you’re doing so in a safe manner, and that your coworkers are aware of what you’re doing.
+
+  ### Changing Multiple Commits
+
+    rebase -i --> is a command which allows us to interactively stop after each commit we’re trying to modify, and then make whatever changes we wish. We do have to tell this command which is the last commit we want to edit. For example, 
+    
+    $ git rebase -i HEAD~2 --> allows us to edit the last two commits.
 
     
       
