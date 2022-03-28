@@ -51,3 +51,5 @@
       echo
       shift
     done
+
+    shift comes in handy when user supply information as arguments to your script and there is one argument that conatins multipl words
