@@ -29,7 +29,7 @@
     redirect stdout and stderr in different files
 
     head -n 1 /etc/passwd /etc/hosts /fakefile > head.out 2>&1
-    both stdout and stderr in same file, 2>&1 redirst err as stdin
+    both stdout and stderr in same file, 2>&1 redirst err as stdout
 
     head -n 1 /etc/passwd /etc/hosts /fakefile &> head.out
     both stdout and stderr in same file,
