@@ -20,4 +20,5 @@
   -> 2d3w -> 2 times delete the 3w motion
   -> . -> repeats previous command -> press dd then press . to repeat
   -> ! -> force the action like q!, toggle vim setting, execute external commands 
+  -> dG -> deletes every line in the file.
 
