@@ -12,9 +12,9 @@
   -> dd -> delete whole line
   -> 3dd-> delete three lines, from current position.
   -> [count]operation{motion} 	
-    -> 5dw
-    -> 5 = the count
-    -> dw the command
+  -> 5dw
+  -> 5 = the count
+  -> dw the command
   -> 3w -> move three words forward
   -> 3b -> move three words backwords
   -> 2d3w -> 2 times delete the 3w motion
