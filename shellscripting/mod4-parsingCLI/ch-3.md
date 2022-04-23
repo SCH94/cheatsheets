@@ -3,9 +3,9 @@
   If you want your Shell scripts to behave like other Lennix executables, you're going to want to allow
   users to specify options that change the behavior of your scripts.
   
-  $ type -a getops
+    $ type -a getops
 
-  $ help getops
+    $ help getops
   Getopts is used by shell procedures to parse positional parameters as options.
   You'll need to use getups in a while Loop getups returns zero as long as it finds an option to process.
   Otherwise, it returns one which will cost the while loop to exit.
@@ -14,22 +14,22 @@
   #### verbose mode can be enabled with -v
 
 
-  usage() {
-    echo 'USAGE: ${0} [-vs] [-l LENGTH]' >&2
-    echo 'Generate random password.'
-    echo '  -l LENGTH specify the password length.'
-    echo '  -v        Increase Verbosity'
-    echo '  -s        Append special character to password'
-    exit 1
-  }
+	usage() {
+	    echo 'USAGE: ${0} [-vs] [-l LENGTH]' >&2
+	    echo 'Generate random password.'
+	    echo '  -l LENGTH specify the password length.'
+	    echo '  -v        Increase Verbosity'
+	    echo '  -s        Append special character to password'
+	    exit 1
+	  }
 
-  log() {  
-    local MESSAGE="${@}"
-    if [[ "${VERBOSE}" = 'true' ]]
-    then
-      echo "${MESSAGE}"
-    fi
-  }
+        log() {  
+	    local MESSAGE="${@}"
+	    if [[ "${VERBOSE}" = 'true' ]]
+	    then
+	      echo "${MESSAGE}"
+	    fi
+	  }
   #### set default value for password length
   LENGTH=48
 
