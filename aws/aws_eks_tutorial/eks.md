@@ -70,6 +70,7 @@ confirm that the cluster is up and running successfully
 
   kubectl get nodes -o wide
 
-  NAME                                                    STATUS   ROLES    AGE     VERSION              INTERNAL-IP       EXTERNAL-IP   OS-IMAGE         KERNEL-VERSION                  CONTAINER-RUNTIME
-fargate-ip-192-168-141-147.region-code.compute.internal Ready    <none>   8m3s    v1.22.6-eks-7c9bda   192.168.141.147   <none>        Amazon Linux 2   5.4.156-83.273.amzn2.x86_64   containerd://1.3.2
-fargate-ip-192-168-164-53.region-code.compute.internal  Ready    <none>   7m30s   v1.22.6-eks-7c9bda   192.168.164.53    <none>        Amazon Linux 2   5.4.156-83.273.amzn2.x86_64   containerd://1.3.2
+  |NAME|                                                    STATUS   |ROLES    |AGE     |VERSION              |INTERNAL-IP       |EXTERNAL-IP   |OS-IMAGE         |KERNEL-VERSION                  |CONTAINER-RUNTIME|
+  |-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|fargate-ip-192-168-141-147.region-code.compute.internal |Ready    |<none>   |8m3s    |v1.22.6-eks-7c9bda   |192.168.141.147   |<none>        |Amazon Linux 2   |5.4.156-83.273.amzn2.x86_64   |containerd://1.3.2
+|fargate-ip-192-168-164-53.region-code.compute.internal  |Ready    |<none>   |7m30s   |v1.22.6-eks-7c9bda   |192.168.164.53    |<none>        |Amazon Linux 2   |5.4.156-83.273.amzn2.x86_64   |containerd://1.3.2|
