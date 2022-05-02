@@ -6,6 +6,7 @@ upper portion: help window
 lower portion: content of original file
 
 to exit out of help
+
     :q<ENTER>
 
 you can get help for specific command by typing
