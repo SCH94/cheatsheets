@@ -126,17 +126,19 @@ If everything is setup correctly, you should see output like this:
     [ℹ] building cluster stack "eksctl-my-cluster-cluster"
     [ℹ] deploying stack "eksctl-my-cluster-cluster"
     [✔] all EKS cluster resources for "my-cluster" have been created
-    [✔] saved kubeconfig as "/Users/abhishek.ray/.kube/config"
+    [✔] saved kubeconfig as "/Users/arul.v/.kube/config"
     [ℹ] creating Fargate profile "fp-default" on EKS cluster "my-cluster"
     [ℹ] created Fargate profile "fp-default" on EKS cluster "my-cluster"
     [ℹ] "coredns" is now schedulable onto Fargate
     [ℹ] "coredns" is now scheduled onto Fargate
     [ℹ] "coredns" pods are now scheduled onto Fargate
-    [ℹ] kubectl command should work with "/Users/abhishek.ray/.kube/config", try 'kubectl get nodes'
+    [ℹ] kubectl command should work with "/Users/arul.v/.kube/config", try 'kubectl get nodes'
     [✔] EKS cluster "my-cluster" in "us-east-2" region is ready
     
 
 You can confirm that the cluster is up and running successfully by running the following command. You should see that the nodes should say something like `fargate-ip-`.
+
+* kubectl get nodes
 
 |NAME|                                                    STATUS   |ROLES    |AGE     |VERSION              |INTERNAL-IP       |EXTERNAL-IP   |OS-IMAGE         |KERNEL-VERSION                  |CONTAINER-RUNTIME|
   |-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
@@ -153,7 +155,6 @@ run the following command and note the `VPC Id` for the cluster
 You should see output like the following, something like `VPC Id` is `vpc-0723e50fa49f96f4`.
 
     VpcId: vpc-0723e50fa49f96f4
-    RoleArn: arn:aws:iam::945568844480:role/eksctl-my-cluster-cluste-ServiceRole-MRI84BGGOYKB
     Status: ACTIVE
     Tags: {}
     Version: "1.14"
