@@ -1,16 +1,16 @@
 # Getting help
-  type :help or :h then press enter.
+    type :help or :h then press enter.
 
 screen gets divided into two portions
 upper portion: help window
 lower portion: content of original file
 
 to exit out of help
-  :q<ENTER>
+    :q<ENTER>
 
 you can get help for specific command by typing
-  :help <COMMAND>
-  :help dd<ENTER>
+    :help <COMMAND>
+    :help dd<ENTER>
 
 ```
 NOTE: if you come accross information enclosed in brackets in vim documentation, know that its optional
@@ -20,10 +20,10 @@ NOTE: if you come accross information enclosed in brackets in vim documentation,
 brackets are optional, if we strip out brackets then we are left with Delete lines linewise.
 ```
 get help on a given subject
-  :help {subject}
-  :help count<ENTER>
-  :help linewise<ENTER>
-  :h linewise<ENTER>
+    :help {subject}
+    :help count<ENTER>
+    :help linewise<ENTER>
+    :h linewise<ENTER>
 
 go back to previous section in help
   press ctrl-0
