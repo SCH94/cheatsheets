@@ -48,4 +48,12 @@ put the line before the position of cursor
 
     P
 
+## Terminology
+
+|standard|vim|
+|----|----|
+|cut|delete|
+|copy|yank|
+|paste|put|
+
 
