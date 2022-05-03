@@ -1,36 +1,36 @@
 Italics and Bold:  
   
-Italic(_):  
+**Italic(_):** 
 
 ```  
   Writing in Markdown is _not_ that hard!
 ```
 > Writing in Markdown is _not_ that hard!
   
-Bold(**):
+**Bold(**):**
 ```  
   I **will** complete these lessons!
 ```
 > I **will** complete these lessons!
     
-Emphasized:  
+**Emphasized:**  
 ```  
   I *will* complete these lessons!  
 ```
 > I *will* complete these lessons!  
         
-Strikethrough :  
+**Strikethrough :**  
 ```  
   ~~Strikethrough~~  
 ```  
 > ~~Strikethrough~~  
         
-Horizontal rules:  
+**Horizontal rules: ** 
 `--- (three hyphens)`  
 `*** (three asterisks)`  
 `___ (three underscores)`      
       
-Headers:
+**Headers:**
   
     #Header one(biggest)
     ##Header two
