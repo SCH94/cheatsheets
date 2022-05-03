@@ -99,10 +99,10 @@ reference:
           
 Blockquotes(>):
 ```  
-    "Her eyes had called him and his soul had leaped at the call. 
+    >"Her eyes had called him and his soul had leaped at the call. 
     To live, to err, to fall, to triumph, to recreate life out of life!"
 ``` 
-"Her eyes had called him and his soul had leaped at the call. 
+>"Her eyes had called him and his soul had leaped at the call. 
  To live, to err, to fall, to triumph, to recreate life out of life!"
         
 multiple paragraphs:
@@ -130,10 +130,10 @@ unordered list:
     * Salmon
     * Butter
 ```
-    * Milk
-    * Eggs
-    * Salmon
-    * Butter
+* Milk
+* Eggs
+* Salmon
+* Butter
       
 ordered list:
 ```  
@@ -142,10 +142,10 @@ ordered list:
     3. Rub the salmon vigorously with butter
     4. Drop the salmon into the egg-milk bowl
 ```
-    1. Crack three eggs over a bowl
-    2. Pour a gallon of milk into the bowl
-    3. Rub the salmon vigorously with butter
-    4. Drop the salmon into the egg-milk bowl
+1. Crack three eggs over a bowl
+2. Pour a gallon of milk into the bowl
+3. Rub the salmon vigorously with butter
+4. Drop the salmon into the egg-milk bowl
              
 sub-lists:
 ```      
@@ -159,15 +159,15 @@ sub-lists:
      * Loves whiskey
       * Possibly also scotch?
 ```
-    * Tintin
-     * A reporter
-     * Has poofy orange hair
-     * Friends with the world's most awesome dog
-    * Haddock
-     * A sea captain
-     * Has a fantastic beard
-     * Loves whiskey
-      * Possibly also scotch?
+* Tintin
+  * A reporter
+  * Has poofy orange hair
+  * Friends with the world's most awesome dog
+* Haddock
+  * A sea captain
+  * Has a fantastic beard
+  * Loves whiskey
+    * Possibly also scotch?
                   
 Paragraphs:
   
