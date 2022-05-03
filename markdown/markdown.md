@@ -226,6 +226,19 @@ ____body
 
 where (_) is space 
 
+**Table**
+```
+|standard|vim|
+|----|----|
+|cut|delete|
+|copy|yank|
+|paste|put|
+```
+|standard|vim|
+|----|----|
+|cut|delete|
+|copy|yank|
+|paste|put|
 
 
     
