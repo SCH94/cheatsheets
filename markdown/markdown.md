@@ -1,9 +1,10 @@
 Italics and Bold:  
   
 Italic(_):  
-  
-  Writing in Markdown is _not_ that hard!
 
+```  
+  Writing in Markdown is _not_ that hard!
+```
 > Writing in Markdown is _not_ that hard!
   
 Bold(**):
