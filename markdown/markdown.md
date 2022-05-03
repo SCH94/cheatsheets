@@ -71,7 +71,7 @@ followed by a colon, followed by the link.
    [another place]: www.github.com
    [another-link]: www.google.com"
 ``` 
->  "Here's [a link to something else][another place].
+  "Here's [a link to something else][another place].
    Here's [yet another link][another-link].
    And now back to [the first link][another place].
    [another place]: www.github.com
@@ -92,17 +92,17 @@ reference:
  [Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
  [Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
 ```
->![Black cat][Black]
+![Black cat][Black]
  ![Orange cat][Orange]
  [Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
  [Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
           
 Blockquotes(>):
 ```  
-    >"Her eyes had called him and his soul had leaped at the call. 
+    "Her eyes had called him and his soul had leaped at the call. 
     To live, to err, to fall, to triumph, to recreate life out of life!"
 ``` 
->"Her eyes had called him and his soul had leaped at the call. 
+"Her eyes had called him and his soul had leaped at the call. 
  To live, to err, to fall, to triumph, to recreate life out of life!"
         
 multiple paragraphs:
@@ -130,7 +130,7 @@ unordered list:
     * Salmon
     * Butter
 ```
->   * Milk
+    * Milk
     * Eggs
     * Salmon
     * Butter
@@ -142,7 +142,7 @@ ordered list:
     3. Rub the salmon vigorously with butter
     4. Drop the salmon into the egg-milk bowl
 ```
->   1. Crack three eggs over a bowl
+    1. Crack three eggs over a bowl
     2. Pour a gallon of milk into the bowl
     3. Rub the salmon vigorously with butter
     4. Drop the salmon into the egg-milk bowl
@@ -159,7 +159,7 @@ sub-lists:
      * Loves whiskey
       * Possibly also scotch?
 ```
->   * Tintin
+    * Tintin
      * A reporter
      * Has poofy orange hair
      * Friends with the world's most awesome dog
@@ -190,17 +190,22 @@ two dot- press spacebar 2 times.
 Code and Syntax Highlighting:  
 Inline code:  
 ```
-    i`
+    ``
       test code
     ``
 ```     
 ``
    test code
 ``
+
 three backticks (```):  
 ```
     ```
-       something..
+    var foo = 'bar';
+
+    function baz(s) {
+    return foo + ':' + s;
+    }
     ```
 ```
 
@@ -214,7 +219,9 @@ return foo + ':' + s;
 Indentation:
 
 header
+
 __header2
+
 ____body
 
 where (_) is space 
