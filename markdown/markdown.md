@@ -7,7 +7,7 @@ Italics and Bold:
 ```
 > Writing in Markdown is _not_ that hard!
   
-**Bold(**):**
+**Bold():**
 ```  
   I **will** complete these lessons!
 ```
@@ -26,6 +26,7 @@ Italics and Bold:
 > ~~Strikethrough~~  
         
 **Horizontal rules: ** 
+
 `--- (three hyphens)`  
 `*** (three asterisks)`  
 `___ (three underscores)`      
