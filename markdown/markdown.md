@@ -106,7 +106,14 @@ Blockquotes(>):
  To live, to err, to fall, to triumph, to recreate life out of life!"
         
 multiple paragraphs:
-          
+```          
+>Once upon a time and a very good time it was there was a moocow coming 
+ down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...
+>
+>His father told him that story: his father looked at him through a glass: he had a hairy face.
+>
+>He was baby tuckoo. The moocow came down the road where Betty Byrne lived: she sold lemon platt.
+```
 >Once upon a time and a very good time it was there was a moocow coming 
  down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...
 >
@@ -117,20 +124,41 @@ multiple paragraphs:
 Lists:
       
 unordered list:
+```
+    * Milk
+    * Eggs
+    * Salmon
+    * Butter
+```
 >   * Milk
     * Eggs
     * Salmon
     * Butter
       
 ordered list:
-  
+```  
+    1. Crack three eggs over a bowl
+    2. Pour a gallon of milk into the bowl
+    3. Rub the salmon vigorously with butter
+    4. Drop the salmon into the egg-milk bowl
+```
 >   1. Crack three eggs over a bowl
     2. Pour a gallon of milk into the bowl
     3. Rub the salmon vigorously with butter
     4. Drop the salmon into the egg-milk bowl
              
 sub-lists:
-      
+```      
+    * Tintin
+     * A reporter
+     * Has poofy orange hair
+     * Friends with the world's most awesome dog
+    * Haddock
+     * A sea captain
+     * Has a fantastic beard
+     * Loves whiskey
+      * Possibly also scotch?
+```
 >   * Tintin
      * A reporter
      * Has poofy orange hair
@@ -161,16 +189,28 @@ two dot- press spacebar 2 times.
            
 Code and Syntax Highlighting:  
 Inline code:  
-> ``
-     
- hree backticks (```):  
->   ```
-    var foo = 'bar';
+```
+    i`
+      test code
+    ``
+```     
+``
+   test code
+``
+three backticks (```):  
+```
+    ```
+       something..
+    ```
+```
 
-    function baz(s) {
-    return foo + ':' + s;
-    }
-    ```    
+```
+var foo = 'bar';
+
+function baz(s) {
+return foo + ':' + s;
+}
+```    
 Indentation:
 
 header
