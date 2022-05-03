@@ -8,15 +8,21 @@ Italic(_):
 > Writing in Markdown is _not_ that hard!
   
 Bold(**):
-  
+```  
+  I **will** complete these lessons!
+```
 > I **will** complete these lessons!
     
 Emphasized:  
-  
+```  
+  I *will* complete these lessons!  
+```
 > I *will* complete these lessons!  
         
 Strikethrough :  
-  
+```  
+  ~~Strikethrough~~  
+```  
 > ~~Strikethrough~~  
         
 Horizontal rules:  
@@ -36,21 +42,35 @@ Headers:
 Links:
   
 Inline links:
-            
+```          
+    [Visit GitHub!](www.github.com)
+    [You're **really, really** going to want to see this.](www.dailykitten.com)
+```
 >[Visit GitHub!](www.github.com)
 >[You're **really, really** going to want to see this.](www.dailykitten.com)
       
 make links within headings:
->####The Latest News from [the BBC](www.bbc.com/news)
+```
+    ####The Latest News from [the BBC](www.bbc.com/news)
+```
+> ####The Latest News from [the BBC](www.bbc.com/news)
           
 reference link:
       
 An advantage of the reference link style is that multiple links to the same place 
 only need to be updated once.
+
 Reference links don't appear in the rendered Markdown. 
+
 You define them by providing the same tag name wrapped in brackets, 
 followed by a colon, followed by the link. 
-      
+```      
+  "Here's [a link to something else][another place].
+   Here's [yet another link][another-link].
+   And now back to [the first link][another place].
+   [another place]: www.github.com
+   [another-link]: www.google.com"
+``` 
 >  "Here's [a link to something else][another place].
    Here's [yet another link][another-link].
    And now back to [the first link][another place].
@@ -60,18 +80,28 @@ followed by a colon, followed by the link.
 Images:
       
 inline image link:
-          
+```        
+![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)
+```
 >![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)
          
 reference:
-          
+```          
+![Black cat][Black]
+ ![Orange cat][Orange]
+ [Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
+ [Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
+```
 >![Black cat][Black]
  ![Orange cat][Orange]
  [Black]: https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg
  [Orange]: http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png
           
 Blockquotes(>):
-  
+```  
+    >"Her eyes had called him and his soul had leaped at the call. 
+    To live, to err, to fall, to triumph, to recreate life out of life!"
+``` 
 >"Her eyes had called him and his soul had leaped at the call. 
  To live, to err, to fall, to triumph, to recreate life out of life!"
         
