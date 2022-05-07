@@ -31,4 +31,9 @@ therefor subnet mask for
     11111111.11111111.11110000.00000000
     255.255.240.0
 
+the first 8 bits and second 8 bits all are on, third 8 bits 4 buts are on and 4 are off, and last 8 bits all are off.so the third 8 bits will be our focus.
+
+|Network id:|192|168|x|0|
+|Broadcast id:|192|168|x|255|
+
 
