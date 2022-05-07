@@ -54,4 +54,29 @@ binary for 60
 ||0|0|1|1|1|1|0|0|
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 |X|1|1|1|1|0|0|0|0|
-||0|0|1|1|0|0|0|0|
+|=|0|0|1|1|0|0|0|0|
+
+now we  have to convert 00110000 to decimal:
+
+|128|64|32|16|8|4|2|1|
+|:--|:--|:--|:--|:--|:--|:--|:--|
+|0|0|1|1|0|0|0|0|
+
+32 + 16 = 48
+
+therefore
+
+|Network id:|192|168|48|0|
+|:--|:--|:--|:--|:--|
+
+now we have to figure out x in broadcast id:
+
+|Broadcast id:|192|168|x|255|
+|:--|:--|:--|:--|:--|
+
+we can figure out this x by looking at magic number, its the last bit turned on whatever that is, is the increment and how many they go up by so in this cast the 4th one
+
+|1|1|1|1|0|0|0|0|
+|:--|:--|:--|:--|:--|
+||||this one|||||
+
