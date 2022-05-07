@@ -82,3 +82,11 @@ we can figure out this x by looking at magic number, its the last bit turned on 
 |1|1|1|1|0|0|0|0|
 ||||this one|||||
 
+(48 + 16) - 1 = 63
+
+|Broadcast id:|192|168|63|255|
+|:--|:--|:--|:--|:--|
+
+|usable ips:|192.168.48.1 - 192.168.63.254|
+|:--|:--|
+
