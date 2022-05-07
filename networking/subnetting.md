@@ -19,7 +19,7 @@ when 20 bits tunred on:
 
 11111111.11111111.11110000.0000
 
-all the 1 turned on(11111111) is equivalent to turning on and adding from 128,64,32...1 which is 255
+all the 1'ns turned on i.e 8 bits (11111111) is equivalent to turning on and adding from 128,64,32...1 which is 255
 
 |1|1|1|1|1|1|1|1|.|1|1|1|1|1|1|1|1|.|1|1|1|1|0|0|0|0|.|0|0|0|0|0|0|0|0|
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--
@@ -31,7 +31,7 @@ therefor subnet mask for
     11111111.11111111.11110000.00000000
     255.255.240.0
 
-the first 8 bits and second 8 bits all are on, third 8 bits 4 buts are on and 4 are off, and last 8 bits all are off.so the third 8 bits will be our focus.
+the first 8 bits and second 8 bits all are on, third 8 bits, 4 bits are on and 4 are off, and last 8 bits all are off.so the third 8 bits will be our focus.
 
 |Network id:|192|168|x|0|
 |:--|:--|:--|:--|:--|
