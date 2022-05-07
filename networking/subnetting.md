@@ -36,7 +36,27 @@ the first 8 bits and second 8 bits all are on, third 8 bits 4 buts are on and 4 
 |Network id:|192|168|x|0|
 |:--|:--|:--|:--|:--|
 
-
 |Broadcast id:|192|168|x|255|
 
+converting 60 to binary: 
 
+|128|64|32|16|8|4|2|1|
+|:--|:--|:--|:--|:--|:--|:--|:--|
+
+* can i take 60 out of 128, no, so 0
+* can i take 64 out of 60, no, so 0
+* can i take 32 out of 60, yes, so 1, remainder 28
+* can i take 16 out of 28, yes, so 1, remainder 12
+* can i take 8 out of 12, yes, so 1, remainder 4
+* can i take 4 out of 4, yes, so 1, remainder 0
+
+binary for 60
+
+|0|0|1|1|1|1|0|0|
+|:--|:--|:--|:--|:--|:--|:--|:--
+
+|1|1|1|1|0|0|0|0|
+|:--|:--|:--|:--|:--|:--|:--|:--
+
+|0|0|1|1|0|0|0|0|
+|:--|:--|:--|:--|:--|:--|:--|:--
