@@ -76,7 +76,9 @@ now we have to figure out x in broadcast id:
 
 we can figure out this x by looking at magic number, its the last bit turned on whatever that is, is the increment and how many they go up by so in this cast the 4th one
 
-|1|1|1|1|0|0|0|0|
+
+|128|64|32|16|8|4|2|1|
 |:--|:--|:--|:--|:--|:--|:--|:--|
+|1|1|1|1|0|0|0|0|
 ||||this one|||||
 
