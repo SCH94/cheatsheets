@@ -93,3 +93,42 @@ Grow the logical volume with ALL of the available space, without specifying a pa
 
     lvextend --resizefs -l +100%FREE /dev/mapper/vg_lvm-root
 
+    pvcreate /dev/sdc
+
+    vgcreate vg_extra /dev/sdc
+
+    vgdisplay
+    
+    lvcreate vg_extra -L 5G -n lv_logs
+
+    lvdisplay
+
+    mkfs.ext4 /dev/mapper/vg_extra-lv_logs
+    
+    mkdir /mnt/extra/logs
+
+    mount /dev/mapper/vg_extra-lv_logs /mnt/extra/logs
+
+finding block id
+
+    blkid /dev/mapper/vg_extra-lv_logs
+
+    cp /etc/fstab /etc/fstab.bak
+
+    nano /etc/fstab
+
+Add a line to the fstab to mount the volume, similar to this
+
+    UUID=<BLOCK ID FOR LOGICAL VOLUME> /mnt/extra/logs ext4 defaults 0 2
+
+    umount /mnt/extra/logs
+
+test your fstab
+
+    mount -a
+
+
+    
+
+
+
