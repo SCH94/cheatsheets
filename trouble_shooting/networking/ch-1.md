@@ -29,4 +29,22 @@ Install CLI based browser
 
     sudo apt install lynx
 
+to surf the web using lynx
+
+    lynx google.com
+
+Install CLI based browser
+
+    sudo apt install links
+
+surf web using links
+
+    links 
+
+to write url in links
+
+    press ctrl-g
+
+
+
 
