@@ -69,6 +69,17 @@ gateway 192.168.1.1
 
     ping -c 5 google.com
 
+if sudo ifdown eth0 gives error similar to:
+
+    interface not present
+
+use
+
+    ifconfig eth0 down
+
+    ifconfig eth0 up
+
+
 setting interface in oracle linux/RHEL
 ---
 
