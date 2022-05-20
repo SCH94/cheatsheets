@@ -127,8 +127,86 @@ test your fstab
 
     mount -a
 
+Snapshots
+---
 
-    
+```
+lvcreate -L 5G -n snaps vg_extra
 
+mkfs.ext4 /dev/mapper/vg_extra-snaps
 
+mkdir -p /mnt/snaps
+
+vim /etc/fstab
+
+/dev/mapper/vg_extra-snaps /mnt/snaps ext4 defaults 0 2
+
+mount -a
+
+cd /mnt/extra/logs
+
+touch file{1..10}.log 
+```
+__ Creating a snapshot __
+```
+syntax:
+
+lvcreate /dev/mapper/<SOURCE VOLUMEGROUP NAME> -L 1G -s -n snapshot_name
+
+-s: snapshot
+
+-n: name
+
+```
+```
+lvcreate /dev/mapper/vg_extra-logs -L 1G -s -n logs_snapshot
+
+```
+
+to see snapshots:
+
+```
+lvs
+```
+
+snapshots will have origin which we can see using lvs
+
+Now suppose we have accidently deleted the log files, however we have snapshot of logs
+
+__ Mounting snapshot __
+
+```
+mkdir /mnt/snaps
+
+mount /dev/mapper/vg_extra-<snapshoy-name> /mnt/snaps
+
+df -h
+
+```
+
+__ Restoring data from snapshot __
+
+unmount the partition you want to recover
+
+```
+umount /mnt/extra/logs
+```
+
+Restore snapshot
+
+```
+lvconvert --merge /dev/mapper/snapshot_name
+```
+
+deactivate to fresh it
+
+```
+lvchange -an /dev/mapper/vg_extra-lv_web
+```
+
+activate:
+
+```
+lvchange -ay /dev/mapper/vg_extra-lv_web
+```
 
