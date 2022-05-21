@@ -24,6 +24,7 @@ $ touch nfs{1..3}
 ```
 
 __Modify the NFS exports file__
+
 This is the file that configures the shares
 
 we have to populate it with the directories we want to export/share
@@ -66,4 +67,4 @@ $ mount ip-of-nfs-server:/public /mnt/nfs
 
 $ ls /mnt/nfs
 ```
-__ OLDER VERSION OF NFS REQUIRE RPC, NEW VERSIONS DOES NOT REQUIRE RPC__
+__OLDER VERSION OF NFS REQUIRE RPC, NEW VERSIONS DOES NOT REQUIRE RPC__
