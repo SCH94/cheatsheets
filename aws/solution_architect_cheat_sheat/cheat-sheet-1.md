@@ -153,7 +153,7 @@ ELB (Elastic Load Balancing) : managed load balancer
 
 *   Load balancer are servers that forward traffic to multiple servers downstream
 
-__ Why use load balancer __
+__Why use load balancer__
 
 *   spread load across multiple downstream instances
 *   expose single point of access(DNS) to your application
@@ -177,10 +177,10 @@ Types:
     *   health check target groups level
     *   balancing to multiple apps on same machine
     *   support redirect : ex : HTTP to HTTPS
-    *   routing table based on path, hostname, query string, headers
-        *   path: example.com/users, example.com/posts
-	*   hostname: one.example.com, two.example.com
-	*   query string, headers: example.com/users?id=123&order=false 
+    *   routing table based on path, hostname, query string, 
+     *   path: example.com/users, example.com/posts
+     *   hostname: one.example.com, two.example.com
+     *   query string, headers: example.com/users?id=123&order=false 
     *   target groups
         *   EC2 instance, ECS, lambda, IP address
 *   Network Load Balancer (NLB) : TCP, TLS, UDP
