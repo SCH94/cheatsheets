@@ -144,11 +144,30 @@ RAID 0 : data shared multiple volume, RAID 1 : data duplicated multiple volume
 
 High Availability & Scalability for EC2
 
-*   Vertical Scaling : Increase instance size
-*   Horizontal Scaling : Increase no of instance
-*   High Availability : run instance for same application across multi AZ
+*   Scalablity means that an application/system can handle greater loads by adapting
+*   Vertical Scaling : Increase instance size,ex: RDS, elasticache
+*   Horizontal Scaling : Increase no of instance, ie distributed systems, ex: web applications, modern applications, Autoscaling group(ASG), Load balancer
+*   High Availability : run instance for same application across multi AZ, goes hand in hand with horizontal scaling. ASG with multi AZ, Load balancer with multi AZ
 
 ELB (Elastic Load Balancing) : managed load balancer
+
+*   Load balancer are servers that forward traffic to multiple servers downstream
+
+__ Why use load balancer __
+
+*   spread load across multiple downstream instances
+*   expose single point of access(DNS) to your application
+*   seamlessly handle failures
+*   do regular health checks to instances
+*   provide SSL for your website
+*   High availablity
+
+Health checks:
+
+*   health check is done on a port and a route(/health is common)
+*   enable load balancer to know if instance is available to reply to request
+
+Types: 
 
 *   Classic Load Balancer (CLB) : HTTP, HTTPS, TCP, SSL
     *   Health check TCP or HTTP based
@@ -159,6 +178,9 @@ ELB (Elastic Load Balancing) : managed load balancer
     *   balancing to multiple apps on same machine
     *   support redirect : ex : HTTP to HTTPS
     *   routing table based on path, hostname, query string, headers
+        *   path: example.com/users, example.com/posts
+	*   hostname: one.example.com, two.example.com
+	*   query string, headers: example.com/users?id=123&order=false 
     *   target groups
         *   EC2 instance, ECS, lambda, IP address
 *   Network Load Balancer (NLB) : TCP, TLS, UDP
