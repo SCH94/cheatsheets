@@ -1,7 +1,6 @@
 # Deleting text and 'thinking in vim'
 ```
   -> The simplest of the deletion commands is lowercase x at your current cursor position.
-<<<<<<< HEAD
   -> capital X deletes the character right before or to the left of your cursor. 
   -> delete a word, D w.
   -> operation{motion} -> dw -> d = delete operation, w= the word motion
