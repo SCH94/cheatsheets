@@ -178,9 +178,9 @@ Types:
     *   balancing to multiple apps on same machine
     *   support redirect : ex : HTTP to HTTPS
     *   routing table based on path, hostname, query string, 
-     *   path: example.com/users, example.com/posts
-     *   hostname: one.example.com, two.example.com
-     *   query string, headers: example.com/users?id=123&order=false 
+        *   path: example.com/users, example.com/posts
+        *   hostname: one.example.com, two.example.com
+        *   query string, headers: example.com/users?id=123&order=false 
     *   target groups
         *   EC2 instance, ECS, lambda, IP address
 *   Network Load Balancer (NLB) : TCP, TLS, UDP
