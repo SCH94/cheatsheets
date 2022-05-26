@@ -1,4 +1,5 @@
 # Deleting text and 'thinking in vim'
+```
   -> The simplest of the deletion commands is lowercase x at your current cursor position.
 <<<<<<< HEAD
   -> capital X deletes the character right before or to the left of your cursor. 
@@ -22,6 +23,7 @@
   -> . -> repeats previous command -> press dd then press . to repeat
   -> ! -> force the action like q!, toggle vim setting, execute external commands 
   -> dG -> deletes every line in the file.
+```
 =======
  
  -> capital X deletes the character right before or to the left of your cursor. 
