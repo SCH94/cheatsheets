@@ -199,6 +199,12 @@ Types:
 ELB Sticky session (for CLB and ALB) redirect same user to same instance behind load balancer
 
 ELB support Cross-Zone Load Balancing : each load balancer instance distributed evenly across all registered instance in all AZ
+    *   ALB
+       *   Always on (cant be disabled
+       *   NO chrages for inter AZ data
+    *   NLB
+       *   disabled by default
+       *   pay charges for inter AZ data if enabled
 
 ELB support SSL certificates
 
