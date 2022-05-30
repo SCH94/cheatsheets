@@ -190,11 +190,11 @@ Types:
     *   support elastic IP (for whitelisting specific IP)
     *   1 static IP per AZ
 *   Gateway Load Balancer (GWLB) : Network Layer, IP Protocol
-  *  operates at layer 3 -IP packets
-  *  sengle entry//exit
-  *  distribute traffic to your virtual applliances
-  *  GENEV protocol on port 6081
-  *  users -> GWLB -> third party appliances -> your application
+    *  operates at layer 3 -IP packets
+    *  sengle entry//exit
+    *  distribute traffic to your virtual applliances
+    *  GENEV protocol on port 6081
+    *  users -> GWLB -> third party security appliances -> your application
 
 ELB Sticky session (for CLB and ALB) redirect same user to same instance behind load balancer
 
