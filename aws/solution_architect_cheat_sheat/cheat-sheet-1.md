@@ -236,8 +236,7 @@ ASG Scaling Policy
 
 *   Predictive Scaling : forecast load and schedule scaling ahead  
     
-
-Dynamic scaling : target tracking (ex, keep average CPU at 40%, etc), step scaling, simple scaling (specify max and min threshold, but in simple, need to wait cooldown)
+*   Dynamic scaling : target tracking (ex, keep average CPU at 40%, etc), step scaling, simple scaling (specify max and min threshold, but in simple, need to wait cooldown)
 
 ASG Scaling cooldown (300 second default)
 
