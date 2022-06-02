@@ -23,32 +23,32 @@ Replace mode:
 *   replace mode press SHIFT-r
 *   what ever we will type, will replace the existing text
 *   replace only one character, press r
- *   you will only be able to replace one character, after replace it will automaticaly moves to normal mode
+     *   you will only be able to replace one character, after replace it will automaticaly moves to normal mode
 
 Change command:
 
 *   press cw, then type your content
 *   change and save it to a named register
- *   press "acw
- *   this will store the deleted word into "a register
- *   press :reg a <enter>
+     *   press "acw
+     *   this will store the deleted word into "a register
+     *   press :reg a <enter>
 *   replace all the text on the line starting at the word car, so to do this just position the cursor at car 
- *   press c$ or SHIFT-c
-* press cc, to change the entire line
+     *   press c$ or SHIFT-c
+*   press cc, to change the entire line
 *   make a character from lower case to uppercase
- *   go to the words and press ~
-*   mmake a word from lower case to upper case
- *   press g~w
+     *   go to the words and press ~
+*   make a word from lower case to upper case
+     *   press g~w
 *   make whole line uppercase
- *   press g~$ or g~~
+     *   press g~$ or g~~
 *   forcefully changing to upper case
- *   press gUw
+     *   press gUw
 *   force whole line to be uppercase
- *   press gUU
+     *   press gUU
 *   force a word to lower case
- *   press guw
+     *   press guw
 *   force whole line to lower case
- *   press guu or gu$
+     *   press guu or gu$
 
 Join command:
 
