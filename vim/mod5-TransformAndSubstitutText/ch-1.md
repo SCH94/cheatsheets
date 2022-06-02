@@ -35,4 +35,23 @@ Change command:
 *   replace all the text on the line starting at the word car, so to do this just position the cursor at car 
  *   press c$ or SHIFT-c
 * press cc, to change the entire line
+*   make a character from lower case to uppercase
+ *   go to the words and press ~
+*   mmake a word from lower case to upper case
+ *   press g~w
+*   make whole line uppercase
+ *   press g~$ or g~~
+*   forcefully changing to upper case
+ *   press gUw
+*   force whole line to be uppercase
+ *   press gUU
+*   force a word to lower case
+ *   press guw
+*   force whole line to lower case
+ *   press guu or gu$
+
+Join command:
+
+*   press shift-j to join two lines, line below will move above, it ads a space between two joined lines
+*   press gJ to join two lines without space
 
