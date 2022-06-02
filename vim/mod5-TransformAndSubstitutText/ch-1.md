@@ -10,13 +10,13 @@ Insert mode:
 *   New line below cursor and place you in insert mode press o
 *   New line above the cursor and place in insert mode, press SHIFT-o
 *   create a line of asterisks:
- *   press 80i, type *
- *   this will create a 80 asterisks
+     *   press 80i, type *
+     *   this will create a 80 asterisks
 *   create 5 lines that begins with '#'
- *   press 5o, type #
- *   this might be a quick way to create a comment section
+     *   press 5o, type #
+     *   this might be a quick way to create a comment section
 *   create 4 lines that begins with "10.11.12."
- *   press 4o, type 10.11.12.
+     *   press 4o, type 10.11.12.
 
 Replace mode:
 
