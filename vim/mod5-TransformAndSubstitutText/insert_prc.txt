@@ -1,0 +1,74 @@
+One of these lines is not like the other one.
+One of these lines is not like the other one.
+
+Hello, my name is Jason.
+Hello, my name is Jason.
+
+Once upon a time.
+Once upon a time.
+
+There was no possibility of taking a walk that day.
+There was no possibility of taking a walk that day.
+
+What is 2 + 2?  Answer on the line below:
+4
+
+4
+What is 3 + 1?  Answer on the line above:
+
+Create a line of asterisks below:
+**************************************************
+Create 5 lines that begin with "#".
+#
+#
+#
+#
+#
+
+Create 4 lines that begin with "10.11.12.".
+10.11.12.
+10.11.12.
+10.11.12.
+10.11.12.
+
+i replace you!
+
+The cat chased the mouse.
+
+The cat chased the mouse.
+
+The cat chased the mouse.
+
+The cat chased the mouse.
+
+The canine chased the mouse.
+
+The cat chased the cat
+
+the cat chased the mouse
+
+This line doesn't belong here!
+
+The cat chased the mouse.
+
+THE cat chased the mouse.
+
+THE CAT CHASED THE MOUSE.
+
+make UPPER uppercase.
+
+MAKE THIS ALL UPPERCASE.
+
+make lower lowercase.
+
+make this all lowercase.
+
+The cat chased the mouse.
+
+The cat chased.The mouse ran.  
+
+3.  4159
+
+Thing 1 Thing 2 Thing 3
+
+this training is provided by LinuxTrainingAcademy.com.
