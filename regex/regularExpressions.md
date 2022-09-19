@@ -45,3 +45,47 @@ re.findall() # extract portion of string that matches regex, similar to find() a
 |         print(line)               |     if re.search('^From:', line) :  |
 |                                   |         print(line)                 |
 
+### Wild-card Characters
+* The dor character matches any character
+* if we add the asterisk character,character is " any number of times"
+
+```
+Expression: ^X.*:
+
+^ matches the start of the line
+X matches itself
+. matches any character
+* many times
+
+some character modify the preceding character like *
+
+the above expression says: "look for line that starts with x and then has zero or more characters followed by colon"
+
+example-text:
+
+X-steve: cmo
+X-dsp-prag: cro
+X-plane is behind schedule: three weeks
+
+when we apply the regular expression on above example text, all three will be returned
+
+X-steve:
+X-dsp-prag:
+X-Plane is behind schedule: three weeks
+
+However, we dont require the third line(X-Plane), so we will fine tune it.
+````
+### Fine-Tuning your match
+* depending upon how clean your data is and the purpose of your application, you may want to narrow your match down a bit
+
+```
+^X-\S+:
+
+^X- says first two characters of the line must be X-
+\S means non white space character
++ one or more times
+
+output of this expression will be:
+X-steve:
+X-dsp-prag:
+```
