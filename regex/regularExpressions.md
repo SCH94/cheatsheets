@@ -20,5 +20,28 @@ $ matches the end of the line
 ( indicated where string character is to start
 ) indicates where the string character is to end
 ```
+### Regular Expression Module
+```
+import re # regex module for python
 
+re.search() # to see if string matches a regex, similar to find()
+
+re.findall() # extract portion of string that matches regex, similar to find() and slicing: var[5:10]
+```
+### using re.search() like find()
+
+| Python Function                   | Regex Function                      |
+|-----------------------------------|-------------------------------------|
+| hand = open('mbox-short.txt')     | import re                           |
+| for line in hand:                 | hand = open('mbox-short.txt')       |
+|     line = line.rstrip()          | for line in hand:                   |
+|     if line.find('From:') >=0:    |     line = line.rstrip()            |
+|         print(line)               |     if re.search('From:', line) :   |
+|                                   |         print(line)                 |
+| hand = open('mbox-short.txt')     | import re                           |
+| for line in hand:                 | hand = open('mbox-short.txt')       |
+|     line = line.rstrip()          | for line in hand:                   |
+|     if line.startswith('From:'):  |     line = line.rstrip()            |
+|         print(line)               |     if re.search('^From:', line) :  |
+|                                   |         print(line)                 |
 
