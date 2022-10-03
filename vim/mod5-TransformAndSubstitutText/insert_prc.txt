@@ -33,15 +33,15 @@ Create 4 lines that begin with "10.11.12.".
 
 i replace you!
 
-The cat chased the mouse.
+they cat chased the mouse.
+
+he chased the cat.
 
 The cat chased the mouse.
 
 The cat chased the mouse.
 
-The cat chased the mouse.
-
-The canine chased the mouse.
+The cat chased the mice
 
 The cat chased the cat
 

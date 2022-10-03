@@ -117,6 +117,9 @@
     $git pull  
     $git merge <branch name>  
     $git push  
+  '''
+  branch early, and branch often
+  '''
 <<<<<<< HEAD
 =======
 
