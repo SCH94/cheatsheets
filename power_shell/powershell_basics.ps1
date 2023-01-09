@@ -72,6 +72,7 @@ dir -Path "C:\Users" -Recurse -Hidden                     # see hidden files and
 
 Get-Process                                               # Get the list of running processes on system
 Get-Service                                               # Get the list of running services on system
+Set-Service -Name sshd -Startuptype Automatic             # set service start up type, autumatic,manual etc
 Write-Host "Hello World"                                  # Write the string to the host
 Read-Host -Prompt "Enter URL"                             # Get the user input
 
@@ -124,6 +125,7 @@ switch -regex (@('Trevor', 'Daniel', 'Bobby')) {          # Switch statement omi
 $a = 0                                                    # Initialize a variable
 [int] $a = 'Trevor'                                       # Initialize a variable, with the specified type (throws an exception)
 [string] $a = 'Trevor'                                    # Initialize a variable, with the specified type (doesn't throw an exception)
+[switch] $a
 
 Get-Command -Name *varia*                                 # Get a list of commands related to variable management
 
